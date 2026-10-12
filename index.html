@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Urithi Cultural Centre | Home of Kenya's Diverse Culture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2b1a10;--soft:#6b5444;--orange:#c2490d;--deep:#8f3205;--gold:#e8a52f;--sand:#f0e2cc;--line:#dcc7a8;--bg:#fbf5ea;--card:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f6e9d6;--soft:#c9b49c;--sand:#2a1b12;--line:#4a3426;--bg:#1d120b;--card:#291a11}}
+:root[data-theme="dark"]{--ink:#f6e9d6;--soft:#c9b49c;--sand:#2a1b12;--line:#4a3426;--bg:#1d120b;--card:#291a11}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.65 "Work Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0 0 .5em}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);font-weight:700}h3{font-size:1.25rem;font-weight:700}
+p{margin:0 0 1em;max-width:62ch}a{color:inherit}img,svg{max-width:100%}
+.wrap{max-width:1160px;margin:auto;padding:0 20px}section{padding:80px 0}
+.btn{display:inline-block;border:2px solid var(--orange);background:var(--orange);color:#fff;padding:.8em 1.6em;border-radius:999px;font-weight:600;text-decoration:none;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{background:var(--deep);border-color:var(--deep)}
+.btn.ghost{background:transparent;color:#fff;border-color:#fff}.btn.ghost:hover{background:#fff;color:var(--deep)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.kente{height:10px;background:repeating-linear-gradient(90deg,var(--orange) 0 28px,var(--gold) 28px 40px,var(--ink) 40px 52px,var(--sand) 52px 60px)}
+.top{background:var(--ink);color:#f6e9d6;font-size:.88rem}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px;align-items:center}
+.top a{text-decoration:none;margin-right:16px}.top a:hover{color:var(--gold)}
+.soc{display:flex;gap:10px}.soc a{margin:0;padding:3px 12px;border:1px solid #6b5444;border-radius:999px;font-size:.82rem}
+header.nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font:900 1.5rem Fraunces,serif;text-decoration:none;color:var(--orange)}
+.logo small{display:block;font:500 .7rem "Work Sans";color:var(--soft)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}nav a:hover{border-color:var(--orange)}
+nav a.bk{background:var(--orange);color:#fff;padding:8px 18px;border-radius:999px;border:0}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--ink);font:inherit}
+.hero{position:relative;min-height:80vh;color:#fff;display:grid;align-items:center;overflow:hidden;padding:0}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s}.slide.on{opacity:1}
+.s1{background:radial-gradient(circle at 75% 30%,#e8a52f 0,transparent 35%),linear-gradient(120deg,#5c1d04,#c2490d)}
+.s2{background:radial-gradient(circle at 20% 70%,#e8a52f 0,transparent 30%),linear-gradient(120deg,#2b1a10,#8f3205)}
+.s3{background:radial-gradient(circle at 80% 75%,#f0c46a 0,transparent 33%),linear-gradient(120deg,#3b1406,#a53b08)}
+.s4{background:radial-gradient(circle at 30% 30%,#d9902a 0,transparent 32%),linear-gradient(120deg,#4a2a0c,#9c3d09)}
+.slide svg{position:absolute;right:4%;bottom:0;height:88%;opacity:.28;fill:#1c0f08}
+.slide svg{display:none}
+.s1{background:linear-gradient(120deg,rgba(92,29,4,.55),rgba(194,73,13,.25)),url(https://gravityboma.co.ke/images/b1.jpeg) center/cover}
+.s2{background:linear-gradient(120deg,rgba(43,26,16,.55),rgba(143,50,5,.25)),url(https://gravityboma.co.ke/images/b2.jpeg) center/cover}
+.s3{background:linear-gradient(120deg,rgba(59,20,6,.55),rgba(165,59,8,.25)),url(https://gravityboma.co.ke/images/b3.jpeg) center/cover}
+.s4{background:linear-gradient(120deg,rgba(74,42,12,.55),rgba(156,61,9,.25)),url(https://gravityboma.co.ke/images/b4.jpeg) center/cover}
+.fac .th{background-size:cover!important;background-position:center!important}
+.com img{display:block;width:calc(100% + 44px);max-width:none;height:150px;object-fit:cover;margin:-22px -22px 14px;border-radius:0 0 0 0}
+.abt{width:100%;max-height:320px;object-fit:cover;border-radius:6px 60px 6px 6px;margin-bottom:22px}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,15,8,.65),transparent 70%)}
+.hero .wrap{position:relative;z-index:2;padding-top:70px;padding-bottom:90px}
+.hero h1{font-size:clamp(2.6rem,7.5vw,5.6rem);font-weight:900;max-width:12ch;margin-bottom:.3em}
+.hero .k{font-size:1.05rem;font-weight:500;color:var(--gold);margin-bottom:6px}
+.hero p{font-size:1.15rem;max-width:46ch}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.dots{position:absolute;z-index:3;bottom:26px;left:20px;display:flex;gap:10px}
+.dots button{width:34px;height:6px;border:0;border-radius:3px;background:rgba(255,255,255,.4);cursor:pointer;padding:0}.dots button.on{background:var(--gold)}
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:start}
+.mv{display:grid;gap:16px}
+.mv div{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--orange);border-radius:6px 16px 16px 6px;padding:20px 24px}
+.mv div:nth-child(2){border-left-color:var(--gold)}.mv div:nth-child(3){border-left-color:var(--ink)}
+.mv p{margin:0;color:var(--soft)}
+.sand{background:var(--sand)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fac{background:var(--card);border:1px solid var(--line);border-radius:16px 16px 16px 4px;overflow:hidden}
+.fac .th{height:130px;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.fac div.b{padding:20px 22px}.fac p{font-size:.93rem;color:var(--soft);margin:0}
+.com{background:var(--card);border:1px solid var(--line);border-top:8px solid var(--c);border-radius:6px 6px 18px 18px;padding:22px}
+.com p{font-size:.93rem;color:var(--soft)}.com a{font-weight:600;text-decoration:none;color:var(--deep)}
+.exp{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:46px}
+.exp div{border-left:4px solid var(--orange);padding:2px 0 2px 16px}.exp p{margin:0;color:var(--soft);font-size:.93rem}
+.reg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 30px}
+.reg h3{font-size:1.05rem;color:var(--deep);margin-bottom:.15em}.reg p{font-size:.93rem;color:var(--soft);margin:0}
+.quote{background:var(--ink);color:#f6e9d6;text-align:center;padding:70px 0}
+.quote p{font:500 clamp(1.5rem,3.5vw,2.4rem)/1.3 Fraunces,serif;margin:auto}
+.bookbox{display:grid;grid-template-columns:.8fr 1.4fr;gap:44px}
+form{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f{display:flex;flex-direction:column;gap:5px}.full{grid-column:1/-1}
+label{font-weight:600;font-size:.9rem}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px 12px;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--orange)}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:.9rem}.chk input{width:auto;margin-top:5px}
+.captcha{border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:14px;display:flex;align-items:center;gap:12px;max-width:300px}
+.captcha input{width:24px;height:24px}.captcha small{margin-left:auto;color:var(--soft);font-size:.7rem;text-align:center}
+.msg{display:none;padding:14px;border-radius:10px;background:#e5f2dd;color:#1f4a12;font-weight:500}
+.err{color:#b3261e;font-size:.85rem;min-height:1.2em}
+.chg{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.chg p{color:var(--soft);margin:0}
+footer{background:var(--ink);color:#e9d8c0;padding:60px 0 24px}
+.fg{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:30px}
+footer h3{color:var(--gold);font-size:1.05rem}
+footer a{display:block;text-decoration:none;padding:2px 0}footer a:hover{color:var(--gold)}
+.map{border:2px dashed #6b5444;border-radius:12px;min-height:120px;display:grid;place-items:center;text-align:center;font-size:.9rem;color:#c9b49c;padding:10px;margin-top:10px}
+.copy{border-top:1px solid #4a3426;margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.88rem}
+@media(max-width:900px){
+ section{padding:56px 0}.two,.bookbox{grid-template-columns:1fr}
+ .g3,.reg{grid-template-columns:1fr 1fr}.exp{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}
+ .burger{display:block}
+ nav{position:absolute;top:70px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);display:none}nav.open{display:block}
+ nav ul{flex-direction:column;align-items:stretch;gap:0;padding:8px 20px}nav li a{display:block;padding:12px 0}nav a.bk{text-align:center;margin:8px 0}
+}
+@media(max-width:600px){.g3,.reg,.exp,.fg,form,.chg{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide{transition:none}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+ <div><a href="tel:+254712007000">0712 007 000</a><a href="mailto:info@gravityboma.co.ke">info@gravityboma.co.ke</a></div>
+ <div class="soc" aria-label="Social media"><a href="https://www.facebook.com/GravityAmusementPark/">Facebook</a><a href="https://www.instagram.com/gravity.boma/">Instagram</a><a href="https://www.tiktok.com/@gravity_boma">TikTok</a></div>
+</div></div>
+
+<header class="nav"><div class="wrap">
+ <a class="logo" href="#home">Urithi<small>Cultural Centre &amp; Talent Hub</small></a>
+ <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+ <nav id="menu" aria-label="Main"><ul>
+  <li><a href="#home">Home</a></li><li><a href="#about">About us</a></li><li><a href="#services">What we do</a></li><li><a href="#communities">Communities</a></li><li><a href="#charges">Our charges</a></li><li><a href="#contact">Contact us</a></li><li><a class="bk" href="#reserve">Book Now</a></li>
+ </ul></nav>
+</div></header>
+
+<main>
+<section class="hero" id="home" aria-roledescription="carousel" aria-label="Highlights">
+ <div class="slide s1 on"><svg viewBox="0 0 200 300"><path d="M100 10a18 18 0 110 36 18 18 0 010-36zM60 80c20-14 60-14 80 0l20 70-26 6-8-30v60l22 94h-26l-14-80-14 80H42l22-94v-60l-8 30-26-6z"/></svg></div>
+ <div class="slide s2"><svg viewBox="0 0 200 300"><path d="M40 120c0-50 120-50 120 0 0 30-20 50-60 50s-60-20-60-50zM96 170h8v110h30v14H66v-14h30z"/></svg></div>
+ <div class="slide s3"><svg viewBox="0 0 200 300"><path d="M100 14a16 16 0 110 32 16 16 0 010-32zM50 90l50-14 50 14-10 46-20-6 16 90h-24l-12-60-12 60H64l16-90-20 6z"/></svg></div>
+ <div class="slide s4"><svg viewBox="0 0 200 300"><path d="M20 160L100 90l80 70v20H20zM60 180v100h30v-50h20v50h30V180z"/></svg></div>
+ <div class="wrap">
+  <div class="k" id="hk">Welcome to</div>
+  <h1 id="ht">Urithi Cultural Centre</h1>
+  <p id="hp">Celebrating the diverse communities, traditions, languages, music, food, stories and heritage that make Kenya unique.</p>
+  <div class="cta"><a class="btn" href="#reserve">Book Now</a><a class="btn ghost" href="#about" id="hb">Discover more</a></div>
+ </div>
+ <div class="dots" role="tablist"><button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button><button aria-label="Slide 4"></button></div>
+</section>
+<div class="kente"></div>
+
+<section id="about"><div class="wrap two">
+ <div>
+  <img class="abt" src="https://gravityboma.co.ke/images/mas.png" alt="Kenyan cultural heritage"><h2>The home of Kenya's diverse culture</h2>
+  <p>Urithi is a cultural centre and talent hub that preserves and promotes our diverse heritage while nurturing creativity among learners, artists and the wider community. We aim to complement the government's efforts in advancing culture, heritage and the creative economy.</p>
+  <p>From the Maasai communities of the Rift Valley to the Swahili culture of the Coast and the communities around Lake Victoria, Kenya's cultural diversity is one of its greatest treasures. This place exists to document, celebrate and share it.</p>
+  <a class="btn" href="#services">See what we do</a>
+ </div>
+ <div class="mv">
+  <div><h3>Our mission</h3><p>To provide a welcoming, enjoyable and memorable experience where people can relax, connect, celebrate and create lasting memories.</p></div>
+  <div><h3>Our vision</h3><p>To become a leading destination for entertainment, dining, recreation and unforgettable experiences for families, friends and communities.</p></div>
+  <div><h3>Why us</h3><p>Meet different cultures in person, and learn about the items, music instruments and foods each Kenyan community uses.</p></div>
+ </div>
+</div></section>
+
+<section class="sand" id="services"><div class="wrap">
+ <h2>What you will experience</h2>
+ <div class="g3">
+  <div class="fac"><div class="th" style="background:url(https://gravityboma.co.ke/images/b1.jpeg)"></div><div class="b"><h3>Boma Heritage Grounds</h3><p>Expansive, clean grounds for team-building, school festivals, community celebrations and private exhibitions of any scale.</p></div></div>
+  <div class="fac"><div class="th" style="background:url(https://gravityboma.co.ke/images/hall.jpg)"></div><div class="b"><h3>Cultural conference hall</h3><p>For cultural exhibitions, outdoor learning, performances, festivals and community events.</p></div></div>
+  <div class="fac"><div class="th" style="background:url(https://gravityboma.co.ke/images/g5.jpg)"></div><div class="b"><h3>Kenyan cultural homesteads</h3><p>Living history of traditional architecture, customs and daily life, ideal for students, families and enthusiasts.</p></div></div>
+  <div class="fac"><div class="th" style="background:url(https://gravityboma.co.ke/images/mb.jpg)"></div><div class="b"><h3>Traditional and modern musical bar</h3><p>Scan a QR code at your table to explore traditional instruments, cultural playlists and the stories behind them.</p></div></div>
+  <div class="fac"><div class="th" style="background:url(https://gravityboma.co.ke/images/pig.jpg)"></div><div class="b"><h3>Piglets Derby</h3><p>A light-hearted race the whole family can cheer on, a highlight for kids and adults alike.</p></div></div>
+  <div class="fac"><div class="th" style="--c1:#4a2a0c;--c2:#e8a52f"></div><div class="b"><h3>Kids play zone</h3><p>A variety of entertaining and educational games for children.</p></div></div>
+ </div>
+</div></section>
+
+<section id="communities"><div class="wrap">
+ <h2>Kenyan communities</h2>
+ <p>Explore the traditions and way of life of some of Kenya's major communities.</p>
+ <div class="g3" style="margin-bottom:56px">
+  <div class="com" style="--c:#c2490d"><img src="https://gravityboma.co.ke/images/maasai.png" alt="Maasai community" loading="lazy"><h3>Maasai</h3><p>Distinctive clothing, traditional ceremonies, a pastoral lifestyle and cultural dances.</p><a href="#reserve">Visit to learn more</a></div>
+  <div class="com" style="--c:#e8a52f"><img src="https://gravityboma.co.ke/images/kikuyu.jpg" alt="Kikuyu community" loading="lazy"><h3>Kikuyu</h3><p>A rich agricultural heritage, traditional stories, music, ceremonies and crafts.</p><a href="#reserve">Visit to learn more</a></div>
+  <div class="com" style="--c:#5a6b2a"><img src="https://gravityboma.co.ke/images/iskuti.jpg" alt="Luhya community" loading="lazy"><h3>Luhya</h3><p>Diverse clans, ceremonies, music, dance and rich oral traditions.</p><a href="#reserve">Visit to learn more</a></div>
+  <div class="com" style="--c:#8f3205"><img src="https://gravityboma.co.ke/images/luo.jpg" alt="Luo community" loading="lazy"><h3>Luo</h3><p>Famous for music, storytelling, fishing traditions and cultural heritage.</p><a href="#reserve">Visit to learn more</a></div>
+  <div class="com" style="--c:#2b1a10"><img src="https://gravityboma.co.ke/images/kamba.jpg" alt="Kamba community" loading="lazy"><h3>Kamba</h3><p>Renowned for wood carving, basketry, music, dance and craftsmanship.</p><a href="#reserve">Visit to learn more</a></div>
+  <div class="com" style="--c:#d9902a"><img src="https://gravityboma.co.ke/images/swahili.jpg" alt="Swahili community" loading="lazy"><h3>Swahili</h3><p>A coastal culture shaped by African, Arab and Asian traditions, with rich cuisine and architecture.</p><a href="#reserve">Visit to learn more</a></div>
+ </div>
+ <h2 style="font-size:1.9rem">What to expect</h2>
+ <div class="exp">
+  <div><h3>Traditional dance performances</h3><p>Traditional songs, dances and instruments.</p></div>
+  <div><h3>Kids play zone</h3><p>Entertaining and educative games.</p></div>
+  <div><h3>Performing arts</h3><p>Indigenous dances and oral traditions.</p></div>
+  <div><h3>Cultural artifacts exhibition</h3><p>Art, clothing, jewellery and crafts.</p></div>
+ </div>
+ <h2 style="font-size:1.9rem">Cultural regions of Kenya</h2>
+ <div class="reg">
+  <div><h3>Central Kenya</h3><p>Kikuyu, Embu and Meru, with strong agricultural traditions.</p></div>
+  <div><h3>Western Kenya</h3><p>Luhya, Kisii and others, rich in music and ceremonies.</p></div>
+  <div><h3>Nyanza</h3><p>Luo traditions, fishing communities, music and storytelling.</p></div>
+  <div><h3>Rift Valley</h3><p>Maasai, Kalenjin, Samburu and others with pastoral and agricultural traditions.</p></div>
+  <div><h3>Coastal Kenya</h3><p>Swahili culture, coastal cuisine, architecture and maritime heritage.</p></div>
+  <div><h3>Northern Kenya</h3><p>Somali, Turkana, Rendille and Borana communities.</p></div>
+ </div>
+</div></section>
+
+<div class="quote"><div class="wrap"><p>Our diversity is our strength, and our heritage is our identity.</p></div></div>
+
+<section class="sand" id="reserve"><div class="wrap bookbox">
+ <div>
+  <h2>Book a trip</h2>
+  <p>Tell us who is coming and what you would like to do. We will confirm availability and rates by phone or email.</p>
+  <p style="color:var(--soft);font-size:.9rem">Schools, families, corporate teams and community groups are all welcome.</p>
+ </div>
+ <form id="bf" novalidate>
+  <div class="f full"><label for="ty">Type of visit</label>
+   <select id="ty" required><option value="">Choose a visit type</option><option>Cultural visit or day out</option><option>School trip</option><option>Team building</option><option>Private event or celebration</option><option>Cultural exhibition</option></select></div>
+  <div class="f"><label for="nm">Full name</label><input id="nm" required autocomplete="name"></div>
+  <div class="f"><label for="em">Email</label><input id="em" type="email" required autocomplete="email"></div>
+  <div class="f"><label for="ph">Phone number</label><input id="ph" type="tel" required autocomplete="tel" placeholder="07XX XXX XXX"></div>
+  <div class="f"><label for="dt">Preferred date</label><input id="dt" type="date" required></div>
+  <div class="f"><label for="ad">Adults</label><input id="ad" type="number" min="0" value="0"></div>
+  <div class="f"><label for="ch">Children</label><input id="ch" type="number" min="0" value="0"></div>
+  <div class="f full"><label for="ms">Message (optional)</label><textarea id="ms" rows="3"></textarea></div>
+  <div class="f full chk"><input id="tc" type="checkbox" required><label for="tc" style="font-weight:400">I accept the terms and conditions.</label></div>
+  <div class="full captcha"><input type="checkbox" id="rc" aria-label="I am not a robot"><label for="rc" style="font-weight:500">I'm not a robot</label><small>reCAPTCHA<br>placeholder</small></div>
+  <div class="full err" id="er" role="alert"></div>
+  <div class="full msg" id="ok" role="status"></div>
+  <div class="full"><button class="btn" type="submit">Book Now</button></div>
+ </form>
+</div></section>
+
+<section id="charges"><div class="wrap">
+ <div class="chg">
+  <div><h2 style="font-size:2rem">Our charges</h2><p>Rates depend on the activity and group size, whether it is a school trip, a family day or a hosted event. Call or email for the current rates, or ask for our brochure.</p></div>
+  <a class="btn" href="tel:+254712007000">Call 0712 007 000</a>
+ </div>
+</div></section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <h3>Urithi Cultural Centre</h3>
+        <p>Celebrating the people, traditions, languages and heritage that make Kenya culturally rich and unique.</p>
+        <p>Eastern Bypass, 5 km from Kamakis, on your way to Utawala.</p>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9011548543704!2d36.98690317496555!3d-1.228551148759736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f6bed18733b17%3A0x165067b89289de79!2sGravity%20Boma%20(Cultural%20Centre)!5e0!3m2!1sen!2ske!4v1791812915781!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+      <div>
+        <h3>Call us</h3>
+        <a href="tel:+254712007000">0712 007 000</a>
+        <a href="tel:+254110082603">0110 082 603</a>
+        <a href="tel:+254718433265">0718 433 265</a>
+      </div>
+      <div>
+        <h3>Write to us</h3>
+        <a href="mailto:info@gravityboma.co.ke">Email</a>
+        <a href="https://www.facebook.com/GravityAmusementPark/">Facebook</a>
+        <a href="https://www.instagram.com/gravity.boma/">Instagram</a>
+        <a href="https://www.tiktok.com/@gravity_boma">TikTok</a>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="#about">About us</a>
+        <a href="#services">What we do</a>
+        <a href="#communities">Communities</a>
+        <a href="#charges">Our charges</a>
+        <a href="#reserve">Book a trip</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 Urithi Cultural Centre. All rights reserved.</span>
+      <span>Home of Africa Heritage</span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+const $=id=>document.getElementById(id);
+const bg=document.querySelector('.burger'),nv=$('menu');
+bg.onclick=()=>{const o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+nv.querySelectorAll('a').forEach(a=>a.onclick=()=>{nv.classList.remove('open');bg.setAttribute('aria-expanded',false)});
+const sl=[...document.querySelectorAll('.slide')],ds=[...document.querySelectorAll('.dots button')];
+const C=[
+['Welcome to','Urithi Cultural Centre','Celebrating the diverse communities, traditions, languages, music, food, stories and heritage that make Kenya unique.','Discover more'],
+['Experience','African culture','Feel the vibrant pulse of Kenyan talent. Our central arena comes alive with live performances from traditional dancers.','Explore more'],
+['Taste the experience','Diverse cultural experiences','Food, music and stories from communities across Kenya, shared in one place.','Visit us'],
+['Performing arts','Cultural artifacts exhibition','Powerful songs, energetic movement and authentic attire deliver a storytelling experience you will not want to miss.','Book a trip']];
+const H=['#about','#services','#contact','#reserve'];
+let i=0,t;
+function go(n){i=n;sl.forEach((s,k)=>s.classList.toggle('on',k==n));ds.forEach((d,k)=>d.classList.toggle('on',k==n));
+ $('hk').textContent=C[n][0];$('ht').textContent=C[n][1];$('hp').textContent=C[n][2];$('hb').textContent=C[n][3];$('hb').setAttribute('href',H[n])}
+function run(){clearInterval(t);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)t=setInterval(()=>go((i+1)%4),6000)}
+ds.forEach((d,k)=>d.onclick=()=>{go(k);run()});run();
+$('dt').min=new Date().toISOString().slice(0,10);
+const n=id=>Math.max(0,parseInt($(id).value)||0);
+$('bf').onsubmit=e=>{
+ e.preventDefault();const er=$('er'),ok=$('ok');er.textContent='';ok.style.display='none';
+ const miss=['ty','nm','em','ph','dt'].filter(id=>!$(id).value.trim());
+ if(miss.length){er.textContent='Please complete: '+miss.map(id=>$(id).previousElementSibling.textContent.toLowerCase()).join(', ')+'.';$(miss[0]).focus();return}
+ if(!/^\S+@\S+\.\S+$/.test($('em').value)){er.textContent='Enter a valid email address.';$('em').focus();return}
+ if(n('ad')+n('ch')<1){er.textContent='Add at least one guest.';$('ad').focus();return}
+ if(!$('tc').checked){er.textContent='Accept the terms and conditions to continue.';return}
+ if(!$('rc').checked){er.textContent='Confirm you are not a robot.';return}
+ ok.textContent='Thank you, '+$('nm').value.split(' ')[0]+'. Your request for a '+$('ty').value.toLowerCase()+' on '+$('dt').value+' is received. We will contact you to confirm.';
+ ok.style.display='block';ok.scrollIntoView({block:'nearest'});$('bf').reset();
+};
+</script>
+</body>
+</html>
